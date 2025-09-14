@@ -1,0 +1,50 @@
+name: alpha_news
+description: "A new Flutter project of News app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  carousel_slider: ^5.1.1
+  http: ^1.5.0
+  webview_flutter: ^4.13.0
+  webview_flutter_android: ^4.10.1
+  webview_flutter_wkwebview: ^3.23.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # 👇 icon generator
+  flutter_launcher_icons: ^0.13.1
+
+  # 👇 splash screen generator
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+    - assets/icon.png   # apna logo
+
+# 👇 App icon config
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+
+# 👇 Splash screen config
+flutter_native_splash:
+  color: "#ffffff"        # background color
+  image: assets/icon.png  # splash logo
+  android: true
+  ios: true
+  web: false
